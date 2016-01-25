@@ -1,2 +1,2 @@
 # parent-pom
-parent pom,for fast build projec
+ 项目常用的依赖包,用于快速构建项目,而不用每次创建项目手动去copy,同时也便于团队开发中依赖包的统一
