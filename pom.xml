@@ -38,14 +38,13 @@
         <pagehelper-starter.version>1.2.10</pagehelper-starter.version>
         <commons.io.version>2.5</commons.io.version>
         <velocity.version>1.7</velocity.version>
-        <kaptcha.version>2.3.2</kaptcha.version>
+        <!-- <kaptcha.version>2.3.2</kaptcha.version> -->
         <ehcache.version>3.3.1</ehcache.version>
         <zxing.version>3.2.1</zxing.version>
         <druid.version>1.1.19</druid.version>
         <beetl.version>2.7.15</beetl.version>
         <swagger.version>2.2.2</swagger.version>
         <cglib-nodep.version>3.2.12</cglib-nodep.version>
-        <netty.version>4.1.30.Final</netty.version>
         <mysql.version>8.0.17</mysql.version>
         <jackson.version>2.10.0</jackson.version>
         <apollo.version>1.5.0</apollo.version>
@@ -151,11 +150,11 @@
                 <version>${commons.io.version}</version>
             </dependency>
 
-            <dependency>
+           <!--  <dependency>
                 <groupId>com.github.penggle</groupId>
                 <artifactId>kaptcha</artifactId>
                 <version>${kaptcha.version}</version>
-            </dependency>
+            </dependency> -->
 
             <dependency>
                 <groupId>org.ehcache</groupId>
