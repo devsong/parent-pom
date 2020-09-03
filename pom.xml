@@ -50,6 +50,7 @@
         <jackson.version>2.10.0</jackson.version>
         <apollo.version>1.5.0</apollo.version>
         <nacos.version>1.2.1</nacos.version>
+        <guava.version>29.0-jre</guava.version>
     </properties>
 
     <dependencyManagement>
@@ -228,6 +229,13 @@
                 <version>${nacos.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 
@@ -241,21 +249,21 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
         </profile>
-        
+
         <profile>
             <id>test</id>
             <properties>
                 <env>test</env>
             </properties>
         </profile>
-       
+
         <profile>
             <id>pre</id>
             <properties>
                 <env>pre</env>
             </properties>
         </profile>
-        
+
         <profile>
             <id>prod</id>
             <properties>
