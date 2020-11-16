@@ -50,7 +50,7 @@
         <apollo.version>1.5.0</apollo.version>
         <nacos.version>1.2.1</nacos.version>
         <guava.version>29.0-jre</guava.version>
-        <shardingsphere.version>4.1.1</shardingsphere.version>
+        <shardingsphere.version>4.0.0-RC1</shardingsphere.version>
     </properties>
 
     <dependencyManagement>
@@ -235,9 +235,15 @@
                 <version>${guava.version}</version>
             </dependency>
 
+           <!--  <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>sharding-jdbc-core</artifactId>
+                <version>${shardingsphere.version}</version>
+            </dependency> -->
+
             <dependency>
                 <groupId>org.apache.shardingsphere</groupId>
-                <artifactId>sharding-jdbc-cor</artifactId>
+                <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
                 <version>${shardingsphere.version}</version>
             </dependency>
 
