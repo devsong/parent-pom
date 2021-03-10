@@ -20,7 +20,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <spring-boot.verison>2.1.0.RELEASE</spring-boot.verison>
+        <spring-boot.verison>2.4.3</spring-boot.verison>
+        <!-- <spring-boot.verison>2.1.0.RELEASE</spring-boot.verison> -->
         <zookeeper.version>3.4.14</zookeeper.version>
         <curator.version>4.2.0</curator.version>
         <dubbo.version>2.7.0</dubbo.version>
@@ -32,7 +33,7 @@
         <common-codec.version>1.10</common-codec.version>
         <httpclient.version>4.5.3</httpclient.version>
         <dom.version>1.6.1</dom.version>
-        <fastjson.version>1.2.61</fastjson.version>
+        <fastjson.version>1.2.75</fastjson.version>
         <shiro.version>1.4.0</shiro.version>
         <mapper-starter.version>2.1.0</mapper-starter.version>
         <pagehelper-starter.version>1.2.10</pagehelper-starter.version>
@@ -51,6 +52,7 @@
         <nacos.version>1.2.1</nacos.version>
         <guava.version>23.0</guava.version>
         <shardingsphere.version>4.0.0-RC1</shardingsphere.version>
+        <knife4j.version>3.0.2</knife4j.version>
     </properties>
 
     <dependencyManagement>
@@ -235,17 +237,21 @@
                 <version>${guava.version}</version>
             </dependency>
 
-           <!--  <dependency>
-                <groupId>org.apache.shardingsphere</groupId>
-                <artifactId>sharding-jdbc-core</artifactId>
-                <version>${shardingsphere.version}</version>
-            </dependency> -->
+            <!-- <dependency> <groupId>org.apache.shardingsphere</groupId> <artifactId>sharding-jdbc-core</artifactId> <version>${shardingsphere.version}</version> 
+                </dependency> -->
 
             <dependency>
                 <groupId>org.apache.shardingsphere</groupId>
                 <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
                 <version>${shardingsphere.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+
 
         </dependencies>
     </dependencyManagement>
