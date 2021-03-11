@@ -21,7 +21,6 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <spring-boot.verison>2.4.3</spring-boot.verison>
-        <!-- <spring-boot.verison>2.1.0.RELEASE</spring-boot.verison> -->
         <zookeeper.version>3.4.14</zookeeper.version>
         <curator.version>4.2.0</curator.version>
         <dubbo.version>2.7.0</dubbo.version>
@@ -44,7 +43,6 @@
         <zxing.version>3.2.1</zxing.version>
         <druid.version>1.1.19</druid.version>
         <beetl.version>2.7.15</beetl.version>
-        <swagger.version>2.2.2</swagger.version>
         <cglib-nodep.version>3.2.12</cglib-nodep.version>
         <mysql.version>8.0.17</mysql.version>
         <jackson.version>2.10.0</jackson.version>
@@ -181,18 +179,6 @@
                 <groupId>com.ibeetl</groupId>
                 <artifactId>beetl</artifactId>
                 <version>${beetl.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger2</artifactId>
-                <version>${swagger.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger-ui</artifactId>
-                <version>${swagger.version}</version>
             </dependency>
 
             <dependency>
