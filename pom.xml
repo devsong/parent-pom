@@ -23,7 +23,7 @@
         <zkclient.version>0.11</zkclient.version>
         <netty.version>4.1.42.Final</netty.version>
         <jedis.version>2.9.0</jedis.version>
-        <common-lang3.version>3.8</common-lang3.version>
+        <common-lang3.version>3.12.0</common-lang3.version>
         <common-io.version>2.5</common-io.version>
         <common-codec.version>1.10</common-codec.version>
         <httpclient.version>4.5.3</httpclient.version>
@@ -37,7 +37,7 @@
         <kaptcha.version>2.3.2</kaptcha.version>
         <ehcache.version>3.3.1</ehcache.version>
         <zxing.version>3.2.1</zxing.version>
-        <druid.version>1.1.19</druid.version>
+        <druid.version>1.2.6</druid.version>
         <beetl.version>2.7.15</beetl.version>
         <cglib-nodep.version>3.2.12</cglib-nodep.version>
         <mysql.version>8.0.17</mysql.version>
@@ -45,8 +45,9 @@
         <apollo.version>1.5.0</apollo.version>
         <nacos.version>1.2.1</nacos.version>
         <guava.version>23.0</guava.version>
-        <shardingsphere.version>4.0.0-RC1</shardingsphere.version>
+        <shardingsphere.version>4.1.0</shardingsphere.version>
         <knife4j.version>2.0.8</knife4j.version>
+        <mybatis.version>3.4.6</mybatis.version>
         <mybatis-plus.version>3.4.2</mybatis-plus.version>
     </properties>
 
@@ -220,8 +221,11 @@
                 <version>${guava.version}</version>
             </dependency>
 
-            <!-- <dependency> <groupId>org.apache.shardingsphere</groupId> <artifactId>sharding-jdbc-core</artifactId> <version>${shardingsphere.version}</version> 
-                </dependency> -->
+            <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>sharding-jdbc-core</artifactId>
+                <version>${shardingsphere.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.apache.shardingsphere</groupId>
@@ -240,6 +244,13 @@
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis-plus.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+
 
             <dependency>
                 <groupId>org.springframework.boot</groupId>
