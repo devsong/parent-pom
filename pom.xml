@@ -26,7 +26,7 @@
         <common-lang3.version>3.12.0</common-lang3.version>
         <common-io.version>2.5</common-io.version>
         <common-codec.version>1.10</common-codec.version>
-        <httpclient.version>4.5.3</httpclient.version>
+        <httpclient.version>4.5.13</httpclient.version>
         <dom.version>1.6.1</dom.version>
         <fastjson.version>1.2.75</fastjson.version>
         <shiro.version>1.4.0</shiro.version>
