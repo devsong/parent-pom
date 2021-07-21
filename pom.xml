@@ -19,7 +19,7 @@
         <spring-boot.verison>2.4.3</spring-boot.verison>
         <zookeeper.version>3.4.14</zookeeper.version>
         <curator.version>4.2.0</curator.version>
-        <dubbo.version>2.7.0</dubbo.version>
+        <dubbo.version>2.7.12</dubbo.version>
         <zkclient.version>0.11</zkclient.version>
         <netty.version>4.1.42.Final</netty.version>
         <jedis.version>2.9.0</jedis.version>
