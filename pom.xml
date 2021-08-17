@@ -34,7 +34,7 @@
         <pagehelper-starter.version>1.2.10</pagehelper-starter.version>
         <commons.io.version>2.7</commons.io.version>
         <velocity.version>1.7</velocity.version>
-        <kaptcha.version>2.3.2</kaptcha.version>
+        <kaptcha.version>2.3.3</kaptcha.version>
         <ehcache.version>3.3.1</ehcache.version>
         <zxing.version>3.2.1</zxing.version>
         <druid.version>1.2.6</druid.version>
@@ -189,7 +189,7 @@
             </dependency>
 
             <dependency>
-                <groupId>com.github.penggle</groupId>
+                <groupId>pro.fessional</groupId>
                 <artifactId>kaptcha</artifactId>
                 <version>${kaptcha.version}</version>
             </dependency>
