@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <!-- <parent> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-parent</artifactId> <version>2.4.3</version> 
-        </parent> -->
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.gzs.learn</groupId>
@@ -17,27 +15,25 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <spring-boot.verison>2.4.3</spring-boot.verison>
-        <zookeeper.version>3.4.14</zookeeper.version>
+        <zookeeper.version>3.7.0</zookeeper.version>
         <curator.version>4.2.0</curator.version>
         <dubbo.version>2.7.12</dubbo.version>
         <zkclient.version>0.11</zkclient.version>
-        <netty.version>4.1.42.Final</netty.version>
+        <netty.version>4.1.68.Final</netty.version>
         <jedis.version>2.9.0</jedis.version>
         <common-lang3.version>3.12.0</common-lang3.version>
         <common-io.version>2.5</common-io.version>
-        <common-codec.version>1.10</common-codec.version>
+        <common-codec.version>1.15</common-codec.version>
         <httpclient.version>4.5.13</httpclient.version>
         <fastjson.version>1.2.75</fastjson.version>
         <shiro.version>1.4.0</shiro.version>
         <mapper-starter.version>2.1.0</mapper-starter.version>
-        <pagehelper-starter.version>1.2.10</pagehelper-starter.version>
         <commons.io.version>2.7</commons.io.version>
         <velocity.version>1.7</velocity.version>
         <kaptcha.version>2.3.3</kaptcha.version>
         <ehcache.version>3.3.1</ehcache.version>
         <zxing.version>3.2.1</zxing.version>
         <druid.version>1.2.6</druid.version>
-        <beetl.version>2.7.15</beetl.version>
         <cglib-nodep.version>3.2.12</cglib-nodep.version>
         <mysql.version>8.0.17</mysql.version>
         <jackson.version>2.10.0</jackson.version>
@@ -162,6 +158,10 @@
                         <groupId>log4j</groupId>
                         <artifactId>log4j</artifactId>
                     </exclusion>
+                    <exclusion>
+                        <groupId>io.netty</groupId>
+                        <artifactId>*</artifactId>
+                    </exclusion>
                 </exclusions>
             </dependency>
 
@@ -213,11 +213,6 @@
                 <version>${velocity.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>com.ibeetl</groupId>
-                <artifactId>beetl</artifactId>
-                <version>${beetl.version}</version>
-            </dependency>
 
             <dependency>
                 <groupId>cglib</groupId>
