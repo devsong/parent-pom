@@ -21,6 +21,10 @@ target
 .DS_Store
 .idea
 *.iml
+#gradle
+.gradle
+gradle
+build
 
 # special dir
 logs
