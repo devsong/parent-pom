@@ -14,7 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <spring-boot.verison>2.4.3</spring-boot.verison>
+        <spring-boot.verison>2.4.7</spring-boot.verison>
         <spring-cloud.version>2020.0.4</spring-cloud.version>
         <zookeeper.version>3.7.0</zookeeper.version>
         <curator.version>4.2.0</curator.version>
@@ -94,6 +94,14 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${spring-boot.verison}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -275,7 +283,7 @@
                 <version>${mybatis-plus.version}</version>
             </dependency>
 
-            <!-- <dependency> <groupId>org.mybatis</groupId> <artifactId>mybatis</artifactId> <version>${mybatis.version}</version> 
+            <!-- <dependency> <groupId>org.mybatis</groupId> <artifactId>mybatis</artifactId> <version>${mybatis.version}</version>
                 </dependency> -->
 
             <dependency>
@@ -302,7 +310,7 @@
                 <version>2.3.9.RELEASE</version>
                 <scope>test</scope>
             </dependency>
-            
+
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
