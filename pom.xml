@@ -381,6 +381,13 @@
         </profile>
 
         <profile>
+            <id>uat</id>
+            <properties>
+                <env>uat</env>
+            </properties>
+        </profile>
+
+        <profile>
             <id>pre</id>
             <properties>
                 <env>pre</env>
