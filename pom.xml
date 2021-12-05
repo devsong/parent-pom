@@ -48,6 +48,7 @@
         <elasticsearch.version>6.8.17</elasticsearch.version>
         <dom4j.version>2.1.3</dom4j.version>
         <bcprov.version>1.68</bcprov.version>
+        <mapstruct.version>1.4.2.Final</mapstruct.version>
     </properties>
 
     <dependencyManagement>
@@ -283,9 +284,6 @@
                 <version>${mybatis-plus.version}</version>
             </dependency>
 
-            <!-- <dependency> <groupId>org.mybatis</groupId> <artifactId>mybatis</artifactId> <version>${mybatis.version}</version>
-                </dependency> -->
-
             <dependency>
                 <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo-spring-boot-starter</artifactId>
@@ -304,12 +302,6 @@
                 <version>${bcprov.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-test</artifactId>
-                <version>2.3.9.RELEASE</version>
-                <scope>test</scope>
-            </dependency>
 
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
@@ -317,6 +309,18 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-processor</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${mapstruct.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
